@@ -3,6 +3,7 @@ pipeline{
   stages{
     stage('Bulid') {
       steps{
+        sh 'mvn clean install'
           echo 'building the project'
     }
     }
