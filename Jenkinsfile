@@ -1,16 +1,16 @@
 pipeline{
   agent any
   stages{
-    stage("Bulid"){
+    stage('Bulid'){
       steps{
           echo 'building the project'
     }
-     stage("test"){
+     stage('test'){
        steps{
           echo 'testing the project '
        }
     }
-     stage("deploy"){
+     stage('deploy'){
        steps{
           echo 'deploying the project '
        }
